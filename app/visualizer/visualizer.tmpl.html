@@ -1,0 +1,13 @@
+<div>
+  <h1>{{ ctrl.meter.name || ctrl.meter.ean }}</h1>
+  <p>Haz {{ ctrl.days.length }} days of hour values</p>
+  <svg style="width: 100%; height: 200px" viewBox="0 0 1095 72">
+    <g ng-repeat="day in ctrl.days track by $index">
+      <g ng-repeat="hour in day track by $index">
+        <title>Consumtion {{ hour }} kWh</title>
+        <rect ng-attr-x="{{::$parent.$index * 3}}" ng-attr-y="{{::$index * 3}}" width="2" height="2" ng-style="::{fill: ctrl.getColor(hour)}"/>
+      </g>
+    </g>
+  </svg>
+
+</div>

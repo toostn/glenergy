@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Play', sans-serif;
+  background-color: #222;
+  color: #eee;
+  padding: 30px 20px;
+}
+h1,
+h2,
+h3 {
+  color: #B3F2E7;
+  font-weight: 400;
+}
