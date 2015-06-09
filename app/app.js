@@ -21,7 +21,7 @@ module.exports = app.name;
 app.constant('apiBaseUrl', 'https://app.energimolnet.se/');
 
 app.run(function(energimolnetAPI) {
-  energimolnetAPI.setToken('9f999b72772410cfb4fe0d4309b5f9dabb01e2fafcd7ba946c6cdc11aa8e');
+  energimolnetAPI.setToken('4e7e7d6d01d6a14f19e311d17c07db97fdfb2c7b9155cab4d451c994dbbc');
 });
 
 app.config(function($locationProvider, $urlRouterProvider) {
